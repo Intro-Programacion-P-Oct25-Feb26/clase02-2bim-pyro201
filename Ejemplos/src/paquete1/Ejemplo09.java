@@ -28,7 +28,7 @@ public class Ejemplo09 {
         // y presentar los valore de las posiciones
         int tamaño = promedios.length;
         for (int i = 0; i < tamaño; i++) { // estudiantes.length 
-            mensajeFinal = String.format("%sEstudiante:%s - promedio: %.4f\n",
+            mensajeFinal = String.format("%sEstudiante:%s - promedio: %.1f\n",
                     mensajeFinal,
                     estudiantes[i].toUpperCase(),
                     promedios[i]);

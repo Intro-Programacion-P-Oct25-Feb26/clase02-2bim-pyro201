@@ -25,7 +25,7 @@ public class Ejemplo10 {
         String mensajeFinal = ""; // variable que acumula un reporte final
         // Se hace uso del ciclo repetitivo for para recorrer los arreglos
         // y presentar los valore de las posiciones
-        
+      
         for (int i = 0; i < promedios.length; i++) { // estudiantes.length 
             // Se agrega los valores al reporte siempe y cuando
             // el valor de la posición del arreglo promedios
@@ -34,13 +34,14 @@ public class Ejemplo10 {
             //  8.1 > 8.1
             //  promedios[1]
             //  9 > 8.1
-            if (promedios[i]>8.1) {
+            double valor = promedios[i];
+            if (valor>8.1) {
             
                 mensajeFinal = String.format("%sEstudiante:%s - promedio: "
-                        + "%.4f\n", 
+                        + "%.1f\n", 
                         mensajeFinal,
                         estudiantes[i],
-                        promedios[i]);
+                        valor);
             }
         }
         
