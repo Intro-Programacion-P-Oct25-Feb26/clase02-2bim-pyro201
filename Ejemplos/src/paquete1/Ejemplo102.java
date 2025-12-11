@@ -32,8 +32,8 @@ public class Ejemplo102 {
             // el valor del nombre del estudiante sea:
             // Luis o Ana
             nombre = estudiantes[i];
-            if (nombre.equals("Luis")) {
-            
+            if (!nombre.equals("Luis")) {
+            // el !nos indica que la condicion debe ser que nombre sea diferente de "Luis"
                 mensajeFinal = String.format("%sEstudiante:%s - promedio: "
                         + "%.4f\n", 
                         mensajeFinal,
